@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableRow
+        android:layout_margin="10dp"
+        android:weightSum="4">
+
+
+        <LinearLayout
+            android:layout_width="129dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/productName"
+                style="@style/TextColoredCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:paddingEnd="0dp"
+                android:text="product name"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/productQuantity"
+                style="@style/TextColoredCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="0dp"
+                android:text="quantity" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/productPrice"
+            style="@style/TextColoredCart"
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center|end"
+            android:paddingStart="0dp"
+            android:paddingEnd="10dp"
+            android:text="price" />
+
+    </TableRow>
+</TableLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/checkout"
+    android:id="@+id/rel"
+    tools:context=".CheckoutActivity">
+
+    <EditText
+        android:id="@+id/creditcard_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/input_desgin"
+        android:hint="Credit Card Number"
+        android:inputType="number"
+        style="@style/TextColoredBG" />
+    <EditText
+        android:id="@+id/security_pin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/creditcard_number"
+        android:background="@drawable/input_desgin"
+        android:hint="Security pin"
+        android:inputType="numberPassword"
+        style="@style/TextColoredBG"/>
+    <EditText
+        android:id="@+id/expiry_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/security_pin"
+        android:background="@drawable/input_desgin"
+        android:hint="Expiry Date "
+        android:inputType="date"
+        style="@style/TextColoredBG" />
+    <Button
+        android:id="@+id/Btnpayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/expiry_date"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_shape"
+        android:padding="18dp"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        android:textColor="@color/colorwhite"
+        android:text="Pay Now "
+        />
+
+</RelativeLayout>

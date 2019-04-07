@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <VideoView
+
+        android:id="@+id/videoView2"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+    </VideoView>
+
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/input_desgin"
+        android:hint="Email / Username"
+        android:inputType="text"
+        style="@style/TextColoredBG"/>
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_email"
+        android:background="@drawable/input_desgin"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="6dp"
+        style="@style/TextColoredBG"
+        />
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/login_password"
+        android:layout_marginTop="6dp">
+
+     <com.rey.material.widget.CheckBox
+         android:id="@+id/login_chkbox"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         style="@style/Material.Drawable.CheckBox"
+         android:text="Remember me"
+         android:textColor="@android:color/white"
+         android:textColorHint="@android:color/white"
+         android:shadowColor="@android:color/black"
+         android:shadowDx="0"
+         android:shadowDy="0"
+         android:shadowRadius="50"
+         android:gravity="center_vertical"
+         android:textStyle="bold"
+         android:textSize="16dp"
+         android:layout_marginLeft="17dp"/>
+          </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_layout"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_shape2"
+        android:padding="18dp"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@color/colorwhite"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_btn"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_shape2"
+        android:padding="18dp"
+        android:text="Need Help?"
+        android:textAllCaps="false"
+        android:textColor="@color/colorwhite"
+        android:textSize="18dp" />
+
+
+
+
+</RelativeLayout>

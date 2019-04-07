@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDetails"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgselected"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/emovies"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/itemdisplay"
+            android:layout_width="212dp"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_marginEnd="30dp"
+            android:textColor="@android:color/black"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/networkimg"
+            android:layout_width="100dp"
+            android:layout_gravity="center"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/books" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:fadeScrollbars="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price: "
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/productDescLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Product Description:"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/productinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please Wait...."
+                android:textColor="@android:color/black"
+                android:textSize="22sp"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/addtocart"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/textblackborder"
+            android:text="Add To Cart"/>
+
+        <Button
+            android:id="@+id/btn_view_cart"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:background="@drawable/textblackborder"
+            android:text="View Cart" />
+
+    </LinearLayout>
+
+</LinearLayout>

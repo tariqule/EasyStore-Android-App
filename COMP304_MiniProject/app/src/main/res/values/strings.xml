@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">EasyShop</string>
+    <string name="statement">Welcome to easyShop</string>
+    <string name="confirm_phone_statement">We\'ve sent a 6 digit code to your phone number, please confirm your number by entering the sent code.</string>
+    <string name="viewCart">View Cart</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="logout">Logout</string>
+
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <VideoView
+
+        android:id="@+id/videoView3"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/input_desgin"
+        android:hint="Name"
+        android:inputType="text"
+        style="@style/TextColoredBG"/>
+
+    <EditText
+        android:id="@+id/Email_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:background="@drawable/input_desgin"
+        android:hint="Email / Username"
+        android:inputType="textEmailAddress"
+        style="@style/TextColoredBG"/>
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Email_address"
+        android:background="@drawable/input_desgin"
+        android:hint="Address"
+        android:inputType="text"
+        style="@style/TextColoredBG"/>
+
+    <EditText
+        android:id="@+id/Phone_number"
+        style="@style/TextColoredBG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address"
+        android:background="@drawable/input_desgin"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:maxLength="12" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Phone_number"
+        android:background="@drawable/input_desgin"
+        android:hint="Password"
+        android:inputType="textPassword"
+        style="@style/TextColoredBG"
+
+        />
+    <EditText
+        android:id="@+id/confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_password"
+        android:background="@drawable/input_desgin"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        style="@style/TextColoredBG"
+        />
+    <Button
+        android:id="@+id/Btncreate_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/confirm_password"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_shape"
+        android:padding="18dp"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        android:textColor="@color/colorwhite"
+        android:text="Create Account"
+        />
+
+</RelativeLayout>

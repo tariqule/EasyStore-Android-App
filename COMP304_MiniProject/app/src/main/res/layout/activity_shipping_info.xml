@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgr"
+    tools:context=".ShippingInfoActivity">
+
+    <EditText
+        android:id="@+id/street_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/input_desgin"
+        android:hint="Address"
+        android:inputType="text"
+        style="@style/TextColoredBG"/>
+
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/street_address"
+        android:background="@drawable/input_desgin"
+        android:hint="City"
+        android:inputType="text"
+        style="@style/TextColoredBG"/>
+    <EditText
+        android:id="@+id/province"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_desgin"
+        android:layout_below="@+id/city"
+        android:hint="Province"
+        android:inputType="text"
+        style="@style/TextColoredBG"/>
+    <EditText
+        android:id="@+id/postal_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_desgin"
+        android:layout_below="@+id/province"
+        android:hint="Postal Code"
+        android:inputType="text"
+        style="@style/TextColoredBG"/>
+
+    <Button
+        android:id="@+id/btnShipping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/postal_code"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_shape"
+        android:padding="18dp"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        android:textColor="@color/colorwhite"
+        android:text="Confirm "
+        />
+
+</RelativeLayout>

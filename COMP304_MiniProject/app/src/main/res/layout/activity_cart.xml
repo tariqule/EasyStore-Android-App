@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/whitegrad"
+    tools:context=".CartActivity">
+
+    <TextView
+        android:id="@+id/displayTotal"
+        style="@style/TextColoredCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Total Cart Value = $0"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:fadeScrollbars="false">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/list_product" />
+
+            <Button
+                android:id="@+id/payCartBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_shape"
+                android:padding="18dp"
+                android:textAllCaps="false"
+                android:textSize="18dp"
+                android:textColor="@color/colorwhite"
+                android:text="Checkout" />
+
+            <Button
+                android:id="@+id/clearCartBtn"
+                android:onClick="reset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_shape"
+                android:padding="18dp"
+                android:textAllCaps="false"
+                android:textSize="18dp"
+                android:textColor="@color/colorwhite"
+                android:text="Clear Cart" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

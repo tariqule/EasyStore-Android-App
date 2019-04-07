@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm your phone number"
+        android:textColor="@android:color/white"
+        android:layout_margin="10dp"
+        android:textAlignment="center"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm_phone_statement"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:id="@+id/digitConfirm"
+            android:inputType="number"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:maxLength="6"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/input_desgin"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif"
+            android:hint="6 Digit Code"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+</LinearLayout>
